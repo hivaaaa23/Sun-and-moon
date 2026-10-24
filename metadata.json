@@ -1,0 +1,6 @@
+{
+  "name": "Cinematic Sun & Moon — Endure",
+  "description": "A cinematic, artistic web animation and visualizer inspired by the Sun and Moon trend set to Fabio Adelino de Morais's Endure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

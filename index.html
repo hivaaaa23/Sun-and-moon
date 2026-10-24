@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Cinematic Sun & Moon — Endure</title>
+    <meta name="description" content="Cinematic Sun and Moon viral trend with Fabio Adelino de Morais - Endure dialogue loop." />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="cosmos-container" id="cosmos-container">
+      <!-- Fullscreen High-DPI Canvas -->
+      <canvas id="celestial-canvas"></canvas>
+
+      <!-- Poetic Subtitles -->
+      <section class="center-stage" aria-live="polite">
+        <div class="subtitle-container" id="subtitle-container">
+          <p class="dialogue-text" id="dialogue-text"></p>
+        </div>
+      </section>
+
+      <!-- Minimalist Controls in top corner -->
+      <div class="floating-controls" id="floating-controls">
+        <button class="minimal-btn minimal-btn-text" id="style-toggle-btn" title="Toggle Visual Style">
+          <span id="style-label">Viral ASCII</span>
+        </button>
+        <button class="minimal-btn" id="mute-btn" title="Mute / Unmute" aria-label="Mute or Unmute">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+        <button class="minimal-btn" id="fullscreen-btn" title="Fullscreen" aria-label="Fullscreen">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <polyline points="9 21 3 21 3 15"></polyline>
+            <line x1="21" y1="3" x2="14" y2="10"></line>
+            <line x1="3" y1="21" x2="10" y2="14"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Play / Click to start overlay -->
+      <div class="play-indicator-overlay" id="play-overlay">
+        <div class="play-circle-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="6 3 20 12 6 21 6 3"></polygon>
+          </svg>
+        </div>
+        <span class="play-hint">Click anywhere to play</span>
+      </div>
+
+      <!-- Discreet bottom progress hairline -->
+      <div class="bottom-hairline">
+        <div class="bottom-hairline-fill" id="hairline-fill"></div>
+      </div>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
